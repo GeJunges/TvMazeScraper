@@ -1,0 +1,15 @@
+.vs/
+.vscode/
+
+#project.json files
+project.json.old
+project.lock.json
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*bin/
+*obj/
+*.orig

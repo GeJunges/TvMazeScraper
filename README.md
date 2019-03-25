@@ -1,0 +1,1 @@
+https://{url}/swagger/index.html

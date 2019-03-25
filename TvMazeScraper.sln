@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28621.142
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvMazeScraper.Domain", "TvMazeScraper.Domain\TvMazeScraper.Domain.csproj", "{86ACB6D1-B106-4AE2-99F4-289E7B2FA749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvMazeScraper.Infrastructure", "TvMazeScraper.Infrastructure\TvMazeScraper.Infrastructure.csproj", "{E4152095-B88D-491A-A084-20DFF58577EB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{86ACB6D1-B106-4AE2-99F4-289E7B2FA749} = {86ACB6D1-B106-4AE2-99F4-289E7B2FA749}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvMazeScraper.Unit.Tests", "TvMazeScraper.Unit.Tests\TvMazeScraper.Unit.Tests.csproj", "{752AD51C-2DC7-4E2D-BC35-DA2147A3C351}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E4152095-B88D-491A-A084-20DFF58577EB} = {E4152095-B88D-491A-A084-20DFF58577EB}
+		{86ACB6D1-B106-4AE2-99F4-289E7B2FA749} = {86ACB6D1-B106-4AE2-99F4-289E7B2FA749}
+		{D67018D3-847E-44B9-AB05-BAEF03FCA0D5} = {D67018D3-847E-44B9-AB05-BAEF03FCA0D5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvMazeScraper.API", "TvMazeScraper.API\TvMazeScraper.API.csproj", "{D67018D3-847E-44B9-AB05-BAEF03FCA0D5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E4152095-B88D-491A-A084-20DFF58577EB} = {E4152095-B88D-491A-A084-20DFF58577EB}
+		{86ACB6D1-B106-4AE2-99F4-289E7B2FA749} = {86ACB6D1-B106-4AE2-99F4-289E7B2FA749}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86ACB6D1-B106-4AE2-99F4-289E7B2FA749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86ACB6D1-B106-4AE2-99F4-289E7B2FA749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86ACB6D1-B106-4AE2-99F4-289E7B2FA749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86ACB6D1-B106-4AE2-99F4-289E7B2FA749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4152095-B88D-491A-A084-20DFF58577EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4152095-B88D-491A-A084-20DFF58577EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4152095-B88D-491A-A084-20DFF58577EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4152095-B88D-491A-A084-20DFF58577EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{752AD51C-2DC7-4E2D-BC35-DA2147A3C351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{752AD51C-2DC7-4E2D-BC35-DA2147A3C351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{752AD51C-2DC7-4E2D-BC35-DA2147A3C351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{752AD51C-2DC7-4E2D-BC35-DA2147A3C351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D67018D3-847E-44B9-AB05-BAEF03FCA0D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D67018D3-847E-44B9-AB05-BAEF03FCA0D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D67018D3-847E-44B9-AB05-BAEF03FCA0D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D67018D3-847E-44B9-AB05-BAEF03FCA0D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7496A2D1-4760-4D6D-92FF-F3224AE5E565}
+	EndGlobalSection
+EndGlobal
